@@ -7,6 +7,15 @@ export enum ShipSystemStatus {
 }
 
 export type UITheme = 'cyan' | 'red' | 'emerald';
+export type ViewMode = 'SHIP' | 'SYSTEM';
+
+export interface FleetMessage {
+  id: string;
+  sender: string;
+  content: string;
+  timestamp: number;
+  priority: 'LOW' | 'MED' | 'HIGH';
+}
 
 export interface ShipResources {
   hull: number;
@@ -56,4 +65,6 @@ export interface GameState {
   services: SystemService[];
   files: ShipFile[];
   activeModule: 'NAV' | 'FILE' | 'SEC' | 'KERN';
+  viewMode: ViewMode;
+  fleetMessages: FleetMessage[];
 }
