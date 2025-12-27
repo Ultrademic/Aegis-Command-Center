@@ -1,0 +1,7 @@
+{
+  "name": "Aegis Command Center",
+  "description": "A futuristic sci-fi spaceship command console featuring Commander Zeta, an advanced ship AI with voice synthesis and real-time mission tracking.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
